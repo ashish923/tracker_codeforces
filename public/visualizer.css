@@ -1,0 +1,20 @@
+.chart-con {
+  margin: 100px auto;
+}
+
+canvas {
+  margin: 0 auto !important;
+  width: 350px !important;
+  height: 350px !important;
+}
+
+.card-header {}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border: none;
+}
+.card-header{
+  background-color: var(--yellow);
+  color:white;
+}

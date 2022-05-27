@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-md">
+  <div class="container">
+    <a href="#" class="navbar-brand">codeforces tracker</a>
+
+    <i class="fa-solid fa-bars navbar-toggler text-white" data-target="#mobile-menu" data-toggle="collapse"></i>
+    <div class="collapse navbar-collapse" id="mobile-menu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="/menu" class="nav-link active">Visualizer</a></li>
+        <li class="nav-item"><a href="/problem" class="nav-link">Problem Sets</a></li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           
+            <span class="username"><%= data2.userDetatil[0].handle %></span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <span class="dropdown-item"><%if (data2.userDetatil[0].maxRating) { %>
+              <%= data2.userDetatil[0].maxRating %> (<%= data2.userDetatil[0].maxRank %>)
+              <% } %>
+              </span>
+            <span class="dropdown-item"><%= data2.solvedQuestion.length %> problems</span>
+            <span class="dropdown-item"><%= data2.userDetatil[0].rating %> (<%= data2.userDetatil[0].rank %>)</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

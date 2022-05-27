@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans,wght@1,300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #653627;
+  --secondary: #BB2024;
+  --yellow: #FEAC0B;
+  --dark: #191919;
+  --white: #fff;
+  --font: 'Righteous', cursive;
+  --noto: 'Noto Sans', sans-serif;
+}
+
+.upper-half {
+  background-color: var(--primary);
+  height: 60vh;
+}
+
+.tab-content {
+  z-index: 100;
+}
+
+#user-handle {
+  padding: 0 1rem;
+}
+
+.navbar .nav-item {
+  border-radius: 20px;
+  padding: 0px 10px !important;
+  border: 2px solid transparent;
+}
+
+.navbar .nav-link {
+  color: white;
+}
+
+.nav-link.active {}
+
+.navbar-brand {
+  font-family: var(--font);
+  font-size: 24px;
+  color: white;
+  pointer-events: none;
+}
+
+.nav-item:hover {
+  transition: 0.5s;
+  border-bottom: 2px solid var(--yellow);
+}
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-top: 30px;
+  margin-top: 220px !important;
+  border-radius: 10px;
+  position: relative;
+  background-color: var(--primary);
+}
+
+#code-review {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  bottom: 82%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.handle-box .form-field {
+  position: relative;
+  margin: 15px 0;
+}
+
+.form-field input[type="text"] {
+  background: none;
+  width: 100%;
+  display: block;
+  height: 36px;
+  border: none;
+  outline: none;
+  text-align: center;
+  color: white;
+  border-bottom: 2px solid var(--yellow);
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.form-field input[type="submit"] {
+  background: none;
+  border: 2px solid var(--yellow);
+  padding: 5px 20px;
+  color: white;
+  border-radius: 20px;
+  margin: 5px 0px;
+  outline: none;
+  letter-spacing: 1px;
+}
+
+.form-field input[type="submit"]:hover {
+  background-color: var(--yellow);
+  transition: 0.5s;
+}
+
+.developer {
+  margin-top: 150px;
+}
+
+/* Main.html page css */
+.dropdown-item {
+  color: white;
+  border-radius: 20px;
+}
+
+.dropdown-item:hover {
+  background: none;
+  color: white;
+  border-bottom: 2px solid var(--yellow);
+}
+
+.dropdown-menu {
+  background-color: var(--primary);
+}
+.nav-item:hover .dropdown-menu{
+  display: block;
+}
+.dropdown-toggle::after{
+  display: none;
+}

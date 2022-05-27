@@ -1,0 +1,53 @@
+#problem-box {
+  margin-top: 60px;
+  padding: 50px 12px;
+}
+
+.problem-card {
+  margin-bottom: 30px;
+  border-top: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
+}
+
+.card-header {
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  background: var(--primary);
+}
+
+.solved {
+  color: green;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding-bottom: 2px;
+}
+
+.attempted {
+  border-bottom: 1px solid #ddd;
+  color: red;
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+}
+
+.solved a {
+  color: green;
+  margin-left: 10px;
+  font-size: 16px;
+  letter-spacing: 0.5;
+}
+
+.solved::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f00c";
+  color: green;
+  margin-left: 10px;
+}
+
+.attempted a {
+  color: red;
+  margin-left: 10px;
+  font-size: 16px;
+  letter-spacing: 0.5;
+}
